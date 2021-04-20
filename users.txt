@@ -1,0 +1,10 @@
+Personalas_123_MANAGER
+Studentas1_123_STUDENT
+Studentas2_123_STUDENT
+Studentas3_123_STUDENT
+Studentas4_123_STUDENT
+Vartotojas1_123_USER
+Vartotojas2_123_USER
+Vartotojas3_123_USER
+Vartotojas4_123_USER
+Vartotojas5_123_USER

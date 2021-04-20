@@ -1,0 +1,6 @@
+Altorių šešėly_Vincas Mykomaitis-Putinas_32_false_3_5_null_null_0
+Balta drobulė_Antanas Škėma_31_true_3_4_2020-06-06_vartotojas1_0
+Anykščių šilelis_Mykolas Biržiška_41_false_4_1_null_null_0
+Anykščių šilelis_Antanas Baranauskas_59_false_5_9_null_null_0
+Anykščių šilelis_Antanas Baranauskas_58_true_5_9_2020-05-01_Studentas3_0
+Rūgiuose prie bedugnės_Džeromas Selindžeris_13_false_1_3_null_null_0
