@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="gui.MainJFrame">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1124" height="595"/>
+    </constraints>
+    <properties/>
+    <border type="none">
+      <font/>
+      <title-color color="-4473925"/>
+    </border>
+    <children>
+      <grid id="bcda8" binding="userPanel" layout-manager="GridBagLayout">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="7d5a4" class="javax.swing.JButton" binding="loginButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <text value="Prisijungti"/>
+            </properties>
+          </component>
+          <grid id="cfaab" binding="loggedInPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="1.0"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="94b56" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Vartotojas: "/>
+                </properties>
+              </component>
+              <component id="1b58" class="javax.swing.JTextField" binding="usernameTextField">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                </properties>
+              </component>
+              <component id="1fa5f" class="javax.swing.JButton" binding="logoutButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Atsijungti"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <tabbedpane id="d21ad" binding="tabbedPane">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <visible value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="e018c" binding="books" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Biblioteka"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="89625">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="8a8bc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="26fb5" class="javax.swing.JButton" binding="findBook">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="100" height="22"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Ieškoti"/>
+                </properties>
+              </component>
+              <component id="b1cc4" class="javax.swing.JTextField" binding="bookResearch">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="5252a" class="javax.swing.JTextArea" binding="booksResults">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="94db9" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="efea3" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Knygos paieška"/>
+                </properties>
+              </component>
+              <hspacer id="89625">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <grid id="29252" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Knygos"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="1a2b2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Paimtų knygų valdymas"/>
+                </properties>
+              </component>
+              <component id="c4f61" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Grąžinimo laiko pratęsimas"/>
+                </properties>
+              </component>
+              <vspacer id="263d2">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="44b78" class="javax.swing.JTextArea" binding="bookInfo">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="21bf8" class="javax.swing.JTextField" binding="bookExtendField">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <toolTipText value="Įveskite knygos ID"/>
+                </properties>
+              </component>
+              <component id="1cc52" class="javax.swing.JButton" binding="extendButton">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Pratęsti"/>
+                </properties>
+              </component>
+              <component id="32420" class="javax.swing.JButton" binding="showButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Rodyti"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="f7d52" layout-manager="GridLayoutManager" row-count="21" column-count="12" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Darbo vietų rezervacija"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <vspacer id="3a3a8">
+                <constraints>
+                  <grid row="1" column="0" row-span="20" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="c3fee">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="796b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Darbo vietų registracija"/>
+                </properties>
+              </component>
+              <component id="fc055" class="javax.swing.JTextArea" binding="textArea2" default-binding="true">
+                <constraints>
+                  <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="725da" class="javax.swing.JButton" binding="metaiButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="+Metai"/>
+                </properties>
+              </component>
+              <component id="e1f80" class="javax.swing.JButton" binding="minusYear">
+                <constraints>
+                  <grid row="1" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="-Metai"/>
+                </properties>
+              </component>
+              <component id="3ddb1" class="javax.swing.JButton" binding="dienaButton1">
+                <constraints>
+                  <grid row="1" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="-Diena"/>
+                </properties>
+              </component>
+              <component id="70178" class="javax.swing.JButton" binding="mėnesisButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="+Mėnesis"/>
+                </properties>
+              </component>
+              <component id="fd43b" class="javax.swing.JButton" binding="dienaButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="+Diena"/>
+                </properties>
+              </component>
+              <component id="d7632" class="javax.swing.JButton" binding="mėnesisButton1">
+                <constraints>
+                  <grid row="1" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="-Mėnesis"/>
+                </properties>
+              </component>
+              <component id="44a07" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="36d29" class="javax.swing.JRadioButton" binding="buttonFrom8">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="8.00-9.00"/>
+                </properties>
+              </component>
+              <component id="18e7" class="javax.swing.JRadioButton" binding="buttonFrom10">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="10.00-11.00"/>
+                </properties>
+              </component>
+              <component id="20ace" class="javax.swing.JRadioButton" binding="buttonFrom11">
+                <constraints>
+                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="11.00-12.00"/>
+                </properties>
+              </component>
+              <component id="94e53" class="javax.swing.JRadioButton" binding="buttonFrom12">
+                <constraints>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="12.00-13.00"/>
+                </properties>
+              </component>
+              <component id="457f7" class="javax.swing.JRadioButton" binding="buttonFrom13">
+                <constraints>
+                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="13.00-14.00"/>
+                </properties>
+              </component>
+              <component id="1133a" class="javax.swing.JRadioButton" binding="buttonFrom14">
+                <constraints>
+                  <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="14.00-15.00"/>
+                </properties>
+              </component>
+              <component id="75613" class="javax.swing.JRadioButton" binding="buttonFrom15">
+                <constraints>
+                  <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="15.00-16.00"/>
+                </properties>
+              </component>
+              <component id="c4aac" class="javax.swing.JRadioButton" binding="buttonFrom16">
+                <constraints>
+                  <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="16.00-17.00"/>
+                </properties>
+              </component>
+              <component id="4443f" class="javax.swing.JRadioButton" binding="buttonFrom17">
+                <constraints>
+                  <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="17.00-18.00"/>
+                </properties>
+              </component>
+              <component id="a700b" class="javax.swing.JRadioButton" binding="buttonFrom18">
+                <constraints>
+                  <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="18.00-19.00"/>
+                </properties>
+              </component>
+              <component id="cc239" class="javax.swing.JRadioButton" binding="buttonFrom19">
+                <constraints>
+                  <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="19.00-20.00"/>
+                </properties>
+              </component>
+              <component id="e3b26" class="javax.swing.JComboBox" binding="workSpaceCombo">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="----Pasirinkti----"/>
+                    <item value="Individualaus darbo kambarys Nr1"/>
+                    <item value="Individualaus darbo kambarys Nr2"/>
+                    <item value="Individualaus darbo kambarys Nr3"/>
+                    <item value="Individualaus darbo kambarys Nr4"/>
+                    <item value="Grupinio darbo kambarys Nr1"/>
+                    <item value="Grupinio darbo kambarys Nr2"/>
+                    <item value="Grupinio darbo kambarys Nr3"/>
+                    <item value="Grupinio darbo kambarys Nr4"/>
+                    <item value="Mažoji konferencijų salė"/>
+                    <item value="Didžioji konferencijų salė"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="ec8ee" class="javax.swing.JRadioButton" binding="buttonFrom9">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="9.00-10.00"/>
+                </properties>
+              </component>
+              <component id="1e324" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Data"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="826a5" binding="reservation" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Administratorių įrankiai"/>
+            </constraints>
+            <properties>
+              <verifyInputWhenFocusTarget value="true"/>
+              <visible value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="aa5d" binding="onlyForManager" layout-manager="GridLayoutManager" row-count="9" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <verifyInputWhenFocusTarget value="true"/>
+                  <visible value="true"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <hspacer id="e4d32">
+                    <constraints>
+                      <grid row="8" column="1" row-span="1" col-span="4" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="77d1b" class="javax.swing.JTextField" binding="bookID">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="442d4" class="javax.swing.JTextField" binding="userID">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="20732" class="javax.swing.JButton" binding="takeBook">
+                    <constraints>
+                      <grid row="2" column="4" row-span="3" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Užregistruoti"/>
+                    </properties>
+                  </component>
+                  <vspacer id="ed824">
+                    <constraints>
+                      <grid row="7" column="1" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                  <component id="1bbce" class="javax.swing.JTextArea" binding="bookTakingResult">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="a4184" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Vartotojo ID "/>
+                    </properties>
+                  </component>
+                  <component id="43c98" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Knygos ID"/>
+                    </properties>
+                  </component>
+                  <component id="4b556" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="e9a35" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Knygos ID"/>
+                    </properties>
+                  </component>
+                  <component id="ee80e" class="javax.swing.JTextField" binding="bookReturn">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="25ec2" class="javax.swing.JTextArea" binding="bookReturnResult">
+                    <constraints>
+                      <grid row="4" column="1" row-span="3" col-span="2" vsize-policy="2" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="9f617" class="javax.swing.JButton" binding="returnBook">
+                    <constraints>
+                      <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Grąžinti"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
